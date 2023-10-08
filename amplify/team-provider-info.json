@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "cshw188dbbf6d": {}
+      },
+      "api": {
+        "cshw1": {}
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }
