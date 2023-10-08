@@ -67,8 +67,7 @@ const App = ({ signOut }) => {
     fetchNotes();
     event.target.reset();
   }
-  t();
-  }
+  
 
   async function deleteNote({ id, name }) {
     const newNotes = notes.filter((note) => note.id !== id);
@@ -86,6 +85,7 @@ const App = ({ signOut }) => {
   type="file"
   style={{ alignSelf: "end" }}
 />
+
 
 {notes.map((note) => (
   <Flex
@@ -159,6 +159,6 @@ const App = ({ signOut }) => {
       <Button onClick={signOut}>Sign Out</Button>
     </View>
   );
-
+};
 
 export default withAuthenticator(App);
